@@ -1,0 +1,26 @@
+.card {
+  background: rgb(0, 0, 0, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: rgb(231, 139, 19);
+  margin: 2rem auto;
+  height: 300px;
+  padding: 1rem;
+  transition: 0.3s;
+  width: 230px;
+}
+
+.btn {
+  margin-top: 1rem;
+  background-color: #e6aa33;
+  border-radius: 28px;
+  cursor: pointer;
+  color: #555;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 5px 21px;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: coral;
+}
