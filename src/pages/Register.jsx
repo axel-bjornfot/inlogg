@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { UserContext } from "../context/UserProvider";
-import styles from "../css/RegisterUser.module.css";
+import styles from "./css/Register.module.css";
 
 const RegisterUser = () => {
   const history = useHistory();
