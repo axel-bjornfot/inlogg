@@ -49,7 +49,6 @@ const RegisterUser = () => {
           value={password}
           onChange={handlePasswordChange}
         />
-        <br />
         <button type='submit' className={styles.btn}>
           Create new user
         </button>

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { UserContext } from "../context/UserProvider";
 
@@ -29,7 +29,7 @@ const Home = () => {
     console.log(result);
 
     if (result.success) {
-      history.push("/home");
+      history.push("/list");
     }
   };
   return (
