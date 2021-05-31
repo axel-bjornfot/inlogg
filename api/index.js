@@ -3,7 +3,7 @@ const session = require("express-session");
 const path = require("path");
 
 const userRoutes = require("./routes/userRoutes.js");
-const dogRoutes = require("./routes/dogRoutes.js");
+const memeRoutes = require("./routes/memeRoutes.js");
 const port = 3001;
 
 const app = express();
@@ -19,7 +19,7 @@ app.use(
 );
 
 app.use("/api/v1/users", userRoutes);
-app.use("/api/v1/dogs", dogRoutes);
+app.use("/api/v1/memes", memeRoutes);
 
 app.use(express.static(path.join(__dirname, "../build")));
 

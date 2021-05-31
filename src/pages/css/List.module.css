@@ -1,0 +1,28 @@
+.cardWrapper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 2rem;
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 900px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(165, 165, 165);
+}

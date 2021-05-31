@@ -1,17 +1,26 @@
 import { useEffect, useContext } from "react";
-import { DogContext } from "../context/DogProvider";
+import { MemeContext } from "../context/MemeProvider";
 
 import styles from "./css/List.module.css";
 
 const List = () => {
-  const { getDogs, dogs } = useContext(DogContext);
+  const { getMemes, memes } = useContext(MemeContext);
 
   useEffect(() => {
-    getDogs();
-  });
+    getMemes();
+  }, []);
+  console.log(memes);
 
-  console.log(dogs);
-  return <div className={styles.list}></div>;
+  const renderMemes = () => {
+    return memes.map((meme) => (
+      <div className={styles.card}>
+        <h1>{meme.setup}</h1>
+        <h1>{meme.joke}</h1>
+        <h1>{meme.delivery}</h1>
+      </div>
+    ));
+  };
+  return <div className={styles.cardWrapper}>{memes && renderMemes()}</div>;
 };
 
 export default List;
