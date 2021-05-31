@@ -48,9 +48,8 @@ const register = (req, res) => {
     }
 
     userToRegister.password = Encrypt.encrypt(userToRegister.password);
-    query = /*sql*/ `INSERT INTO users (userName, email, password) VALUES ($userName, $email, $password)`;
+    query = /*sql*/ `INSERT INTO users (email, password) VALUES ( $email, $password)`;
     params = {
-      $userName: userToRegister.userName,
       $email: userToRegister.email,
       $password: userToRegister.password,
     };
