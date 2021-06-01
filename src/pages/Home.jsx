@@ -30,6 +30,7 @@ const Home = () => {
 
     if (result.success) {
       history.push("/list");
+      window.location.reload();
     }
   };
   return (

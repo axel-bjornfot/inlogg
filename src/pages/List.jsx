@@ -9,11 +9,10 @@ const List = () => {
   useEffect(() => {
     getMemes();
   }, []);
-  console.log(memes);
 
   const renderMemes = () => {
     return memes.map((meme) => (
-      <div className={styles.card}>
+      <div className={styles.card} key={meme.id}>
         <h1>
           {meme.joke}
           {meme.setup} {meme.delivery}
