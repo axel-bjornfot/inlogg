@@ -4,11 +4,11 @@ import { useContext, useEffect } from "react";
 import styles from "./css/Navbar.module.css";
 
 const Navbar = () => {
-  const { logout, whoami, loggedIn } = useContext(UserContext);
+  const { logout, whoami, user } = useContext(UserContext);
   const history = useHistory();
 
   useEffect(() => {
-    whoami(loggedIn);
+    whoami();
   }, []);
 
   const handleSubmit = async () => {
@@ -16,12 +16,13 @@ const Navbar = () => {
     console.log(result);
     if (result.success) {
       history.push("/");
+      window.location.reload();
     }
   };
-  console.log(loggedIn);
+
   return (
     <nav className={styles.navbar}>
-      {loggedIn ? (
+      {user !== null ? (
         <>
           <NavLink className={styles.link} exact to='/List'>
             List
