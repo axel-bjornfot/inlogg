@@ -1,0 +1,50 @@
+.card {
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(165, 165, 165);
+  margin: 2rem auto;
+  height: 260px;
+  padding: 1rem;
+  transition: 0.3s;
+  width: 200px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: small;
+}
+.link:hover {
+  color: coral;
+}
+.btn {
+  margin-top: 1rem;
+  background-color: #e6aa33;
+  border-radius: 28px;
+  cursor: pointer;
+  color: #555;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 5px 21px;
+  text-decoration: none;
+  float: right;
+}
+.btn:hover {
+  background-color: coral;
+}
