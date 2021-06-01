@@ -14,9 +14,10 @@ const List = () => {
   const renderMemes = () => {
     return memes.map((meme) => (
       <div className={styles.card}>
-        <h1>{meme.setup}</h1>
-        <h1>{meme.joke}</h1>
-        <h1>{meme.delivery}</h1>
+        <h1>
+          {meme.joke}
+          {meme.setup} {meme.delivery}
+        </h1>
       </div>
     ));
   };

@@ -51,10 +51,9 @@ const Home = () => {
           value={password}
           onChange={handlePasswordChange}
         />
-        <span className={styles.link} onClick={handleClick}>
+        <p className={styles.link} onClick={handleClick}>
           Create a new user
-        </span>
-        <br />
+        </p>
         <button type='submit' className={styles.btn}>
           Login
         </button>

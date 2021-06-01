@@ -50,7 +50,7 @@ const RegisterUser = () => {
           onChange={handlePasswordChange}
         />
         <button type='submit' className={styles.btn}>
-          Create new user
+          Register
         </button>
       </form>
     </div>
